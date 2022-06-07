@@ -1,0 +1,84 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.boletos {
+    background-color: v.$verde;
+    padding: 6rem 0;
+    h3 {
+        text-align: center;
+        color: v.$blanco
+    }
+}
+
+.contenido-boletos {
+    @include m.tablet {
+        @include m.grid(2, 2rem);
+    }
+}
+
+.pase-1,
+.pase-2 {
+    margin-bottom: 5rem;
+    h3 {
+        margin: 0 0 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.basico {
+    li {
+        list-style: none;
+        border-bottom: 1px solid rgb(180, 180, 180);
+        background-color: v.$blanco;
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+    h3 {
+        background-color: v.$rosa;
+        padding: 1rem;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+        color: v.$blanco;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+}
+
+.premium {
+    li {
+        list-style: none;
+        border-bottom: 1px solid rgb(180, 180, 180);
+        background-color: v.$blanco;
+        font-size: 1.7rem;
+        font-weight: 400;
+        padding: 1.5rem 0 1.5rem 1rem;
+    }
+    h3 {
+        background-color: v.$rosa;
+        padding: 1rem;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+        color: v.$blanco;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+}
+
+.boletos-lista {
+    padding: 0;
+    margin: 0;
+}
+
+.basico {
+    margin: 0;
+}
+
+.boletos-precio {
+    text-align: center;
+    color: v.$blanco;
+    font-weight: normal;
+    background-color: v.$morado;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 1rem;
+}
